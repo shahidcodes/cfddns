@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Cloudflare Dynamic DNS Updater 👋</h1>
+<h1 align="center">Cloudflare Dynamic DNS Updater 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -16,6 +16,12 @@
 ```sh
 docker run --env-file ./.env -d shahidcodes/cloudflare-ddns
 ```
+
+## Gotchas
+
+- The current ip is fetched using `ifconfig.me` from container.
+- This image can update multiple sub domains. This is useful if you are running a home lab and have only one public ip
+- It only works for single zone.
 
 ## Author
 
